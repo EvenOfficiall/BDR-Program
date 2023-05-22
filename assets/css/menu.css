@@ -76,8 +76,8 @@ nav {
 }
   
   /* "Services" styles */
-/*
-.services {
+
+  .services {
     padding: 15px 0px 40px;
     background-color: #f4f4f4;
 }
@@ -112,8 +112,21 @@ nav {
   
 .service-card p {
     font-size: 16px;
-} */
-  
+}
+
+.menu-btn {
+    background: #333;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 0;
+    margin: 24px 10px 15px;
+}
+
   /* Footer styles */
 
 footer {

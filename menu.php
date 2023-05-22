@@ -19,39 +19,37 @@
                     <a href="./main-page.html">TransConnect</a>
                 </div>
                 <ul class="nav-links">
-                    <!-- <li><a href="./main-page.html">Головна</a></li>
-                    <li><a href="#">Про нас</a></li> -->
+                    <!-- <li><a href="./main-page.html">Головна</a></li> -->
+                    <li><a href="#">Профіль</a></li>
                     <li><a href="./assets/db/log-out.php">Вийти</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- <section class="login">
+        <section class="services">
             <div class="container">
-                <h2>Вхід</h2>
-                <div class="login-block">
-                    <form action="#" class="login-form" data-netlify="true" id="form">
-                        <div class="login-form-field">
-                            <label for="user-email" class="login-form-name">Пошта</label>
-                            <input type="email" class="login-form-input" id="user-email" name="Email">
-                        </div>
-                        <div class="login-form-field">
-                            <label for="user-password" class="login-form-name">Пароль</label>
-                            <input type="password" class="login-form-input" id="user-pass" name="Password">
-                        </div>
-                        <button class="login-form-btn" id="launch-btn">УВІЙТИ</button>
-                        <p>У вас немає акаунту? - <a class='question-link' href="./registration.php">Зареєструйтесь!</a></p>
-                    </form>
+                <h2>Ласкаво просимо на TransConnect</h2>
+                <div class="service-card">
+                    <h3>Вантажні перевезення</h3>
+                    <p>Натисніть на кнопку "Додати вантаж", щоб додати новий вантаж.<br>Натисніть на кнопку "Пропозиції", щоб переглянути всі актуальні пропозиції.</p>
+                    <button class="menu-btn" id="launch-btn" type='submit'>Додати вантаж</button>
+                    <button class="menu-btn" id="launch-btn" type='submit'>Пропозиції</button>
+                </div>
+                <div class="service-card">
+                    <h3>Пассажирські перевезення</h3>
+                    <p>Натисніть на кнопку "Додати поїздку", щоб додати нову поїздку.<br>Натисніть на кнопку "Пропозиції", щоб переглянути всі актуальні пропозиції.</p>
+                    <button class="menu-btn" id="launch-btn" type='submit'>Додати поїздку</button>
+                    <button class="menu-btn" id="launch-btn" type='submit'>Пропозиції</button>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <footer>
             <div class="container">
                 <p>&copy; 2023 TransConnect. Всі права захищені.</p>
                 <ul class="footer-links">
-                    <!-- <li><a href="./main-page.html">Головна</a></li>
-                    <li><a href="#">Про нас</a></li> -->
+                    <!-- <li><a href="#">Головна</a></li> -->
+                    <li><a href="#">Профіль</a></li>
                     <li><a href="./assets/db/log-out.php">Вийти</a></li>
                 </ul>
             </div>
