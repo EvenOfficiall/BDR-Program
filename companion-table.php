@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    require_once './assets/db/connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransConnect</title>
     <link rel="shortcut icon" href="./assets/images/logo-page.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/companion-table.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
     <script src="script.js"></script>
 </head>
@@ -26,21 +31,37 @@
             </nav>
         </header>
 
-        <section class="services">
+        <section class="table-section">
             <div class="container">
-                <h2>Ласкаво просимо на TransConnect</h2>
-                <div class="service-card">
-                    <h3>Вантажні перевезення</h3>
-                    <p>Натисніть на кнопку "Додати вантаж", щоб додати новий вантаж.<br>Натисніть на кнопку "Пропозиції", щоб переглянути всі актуальні пропозиції.</p>
-                    <a href="#" class="cta-button">Додати вантаж</a>
-                    <a href="cargo-table.php" class="cta-button">Пропозиції</a>
-                </div>
-                <div class="service-card">
-                    <h3>Пассажирські перевезення</h3>
-                    <p>Натисніть на кнопку "Додати поїздку", щоб додати нову поїздку.<br>Натисніть на кнопку "Пропозиції", щоб переглянути всі актуальні пропозиції.</p>
-                    <a href="#" class="cta-button">Додати поїздку</a>
-                    <a href="companion-table.php" class="cta-button">Пропозиції</a>
-                </div>
+            <h2>Актуальні пропозиції</h2>
+                <table class="table-card">
+                    <tr>
+                        <th>Дата</th>
+                        <th>Звідки</th>
+                        <th>Куди</th>
+                        <th>Інформація</th>
+                        <th>Ціна</th>
+                        <th>Контакти</th>
+                    </tr>
+
+                    <?php
+                        $companion = mysqli_query($connect, "SELECT * FROM `companion`");
+                        $companion = mysqli_fetch_all($companion);
+                        foreach ($companion as $cmp) {
+                            ?>
+                                <tr>
+                                    <td><?= $cmp[1] ?></td>
+                                    <td><?= $cmp[2] ?></td>
+                                    <td><?= $cmp[3] ?></td>
+                                    <td><?= $cmp[4] ?></td>
+                                    <td><?= $cmp[5] ?> грн</td>
+                                    <td><?= $cmp[6] ?></td>
+                                </tr>
+                            <?php
+                        }
+                    ?>
+
+                </table>
             </div>
         </section>
 
