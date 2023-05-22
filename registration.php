@@ -1,8 +1,14 @@
+<?php
+    session_start();
+    if ($_SESSION['user']) {
+        header('Location: menu.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransConnect</title>
     <link rel="shortcut icon" href="./assets/images/logo-page.png" type="image/x-icon">
@@ -21,7 +27,7 @@
                 <ul class="nav-links">
                     <!-- <li><a href="./main-page.html">Головна</a></li>
                     <li><a href="#">Про нас</a></li> -->
-                    <li><a href="./login.html">Увійти</a></li>
+                    <li><a href="./authorization.php">Увійти</a></li>
                 </ul>
             </nav>
         </header>
@@ -47,7 +53,15 @@
                             <label for="user-confirm-pass" class="registration-form-name">Підтвердіть пароль</label>
                             <input type="password" class="registration-form-input" id="user-confirm-pass" name="password_confirm">
                         </div>
-                        <button class="registration-form-btn" id="launch-btn">РЕЄСТРАЦІЯ</button>
+                        <button class="registration-form-btn" id="launch-btn" type='submit'>РЕЄСТРАЦІЯ</button>
+                        
+                        <?php 
+                            if ($_SESSION['message']) {
+                                echo '<p class="message"> ' . $_SESSION['message'] . ' </p>';
+                            }
+                            unset($_SESSION['message']);
+                        ?>
+
                     </form>
                 </div>
             </div>
@@ -59,7 +73,7 @@
                 <ul class="footer-links">
                     <!-- <li><a href="./main-page.html">Головна</a></li>
                     <li><a href="#">Про нас</a></li> -->
-                    <li><a href="./login.html">Увійти</a></li>
+                    <li><a href="./authorization.php">Увійти</a></li>
                 </ul>
             </div>
         </footer>

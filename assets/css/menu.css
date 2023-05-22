@@ -43,21 +43,52 @@ nav {
     color: #fff;
     text-decoration: none;
 }
+  
+/* Hero styles */
 
-  /* "Registration" styles */
-
-.registration {
+.hero {
+    background-image: url(../images/hero-background.png);
+    background-color: #333, 0.1;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+  
+.hero h1 {
+    font-size: 48px;
+}
+  
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+  
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+  
+  /* "Services" styles */
+/*
+.services {
     padding: 15px 0px 40px;
     background-color: #f4f4f4;
 }
   
-.registration h2 {
+.services h2 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 40px;
 }
   
-.registration-block {
+.service-card {
     background-color: #fff;
     padding: 30px;
     text-align: center;
@@ -66,62 +97,24 @@ nav {
     margin-bottom: 30px;
 }
   
-.registration-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.service-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
-
-.registration-form-field {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
-}
-
-.registration-form-name {
-    color: #000;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 8px;
-}
-
-.registration-form-input {
-    background: #FFFFFF;
-    border: 1px solid #333;
-    border-radius: 8px;
-    height: 48px;
-    font-weight: 400;
-    font-size: 16px;
-    color: #000;
-    padding: 4px 8px;
-}
-
-.registration-form-btn {
-    background: #333;
-    border-radius: 8px;
-    padding: 12px 24px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    cursor: pointer;
-    border: 0;
-    margin-top: 24px; 
+  
+.service-card h3 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
-
-.message {
-    border: 2px solid rgb(255, 33, 33);
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
-
-/* Footer styles */
+  
+.service-card p {
+    font-size: 16px;
+} */
+  
+  /* Footer styles */
 
 footer {
     background-color: #333;

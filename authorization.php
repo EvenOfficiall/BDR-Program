@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if ($_SESSION['user']) {
+        header('Location: menu.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransConnect</title>
     <link rel="shortcut icon" href="./assets/images/logo-page.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/main-page.css">
+    <link rel="stylesheet" href="./assets/css/authorization.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
     <script src="script.js"></script>
 </head>
@@ -24,25 +31,32 @@
                     <li><a href="./authorization.php">Увійти</a></li>
                 </ul>
             </nav>
-                <div class="hero">
-                    <h1>Твій найкращий логістичний друг в Україні</h1>
-                    <p>Ми пропонуємо зручний сервіс для пошуку перевезень на всіх видах транспорту.</p>
-                    <a href="registration.php" class="cta-button">Зареєструватися</a>
-                </div>
         </header>
 
-        <section class="services">
+        <section class="login">
             <div class="container">
-                <h2>Наші послуги</h2>
-                <div class="service-card">
-                    <img src="./assets/images/truck.jpeg" alt="Грузовик">
-                    <h3>Вантажні перевезення</h3>
-                    <p>Ми пропонуємо зручний сервіс для пошуку вантажів по всій країні.</p>
-                </div>
-                <div class="service-card">
-                    <img src="./assets/images/bus.jpeg" alt="Поезд">
-                    <h3>Пассажирські перевезення</h3>
-                    <p>Ми пропонуємо зручний сервіс для пошуку попутників по всій країні.</p>
+                <h2>Вхід</h2>
+                <div class="login-block">
+                    <form action="./assets/db/log-in.php" method="post" class="login-form" data-netlify="true" id="form">
+                        <div class="login-form-field">
+                            <label for="user-email" class="login-form-name">Пошта</label>
+                            <input type="email" class="login-form-input" id="user-email" name="email">
+                        </div>
+                        <div class="login-form-field">
+                            <label for="user-password" class="login-form-name">Пароль</label>
+                            <input type="password" class="login-form-input" id="user-pass" name="password">
+                        </div>
+                        <button class="login-form-btn" id="launch-btn" type='submit'>УВІЙТИ</button>
+                        <p>У вас немає акаунту? - <a class='question-link' href="./registration.php">Зареєструйтесь!</a></p>
+
+                        <?php 
+                            if ($_SESSION['message']) {
+                                echo '<p class="message"> ' . $_SESSION['message'] . ' </p>';
+                            }
+                            unset($_SESSION['message']);
+                        ?>
+
+                    </form>
                 </div>
             </div>
         </section>

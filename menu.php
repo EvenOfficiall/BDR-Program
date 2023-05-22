@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransConnect</title>
     <link rel="shortcut icon" href="./assets/images/logo-page.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
     <script src="script.js"></script>
 </head>
@@ -21,12 +21,12 @@
                 <ul class="nav-links">
                     <!-- <li><a href="./main-page.html">Головна</a></li>
                     <li><a href="#">Про нас</a></li> -->
-                    <li><a href="./login.html">Увійти</a></li>
+                    <li><a href="./assets/db/log-out.php">Вийти</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section class="login">
+        <!-- <section class="login">
             <div class="container">
                 <h2>Вхід</h2>
                 <div class="login-block">
@@ -40,10 +40,11 @@
                             <input type="password" class="login-form-input" id="user-pass" name="Password">
                         </div>
                         <button class="login-form-btn" id="launch-btn">УВІЙТИ</button>
+                        <p>У вас немає акаунту? - <a class='question-link' href="./registration.php">Зареєструйтесь!</a></p>
                     </form>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <footer>
             <div class="container">
@@ -51,7 +52,7 @@
                 <ul class="footer-links">
                     <!-- <li><a href="./main-page.html">Головна</a></li>
                     <li><a href="#">Про нас</a></li> -->
-                    <li><a href="./login.html">Увійти</a></li>
+                    <li><a href="./assets/db/log-out.php">Вийти</a></li>
                 </ul>
             </div>
         </footer>

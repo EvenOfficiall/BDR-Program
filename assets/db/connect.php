@@ -1,9 +1,9 @@
 <?php
 
-    $connect = mysqli_connect(hostname:'localhost', username:'root', password:'', database:'TransConnect');
+    $connect = mysqli_connect('localhost', 'root', '', 'TransConnect' );
 
-    // if (!$connect) {
-    //     die('Error connect to database');
-    // }
+    if (!$connect) {
+        die('Error connect to database');
+    }
     
 ?>
