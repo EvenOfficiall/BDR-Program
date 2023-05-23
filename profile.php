@@ -36,21 +36,10 @@
                 <h2>Привіт, <?= $_SESSION['user']['name'] ?></h2>
                 <div class="service-card">
                     <h3>Персональна інформація</h3>
-                    <div>
-                        <p><?= $_SESSION['user']['name'] ?></p>
-                        <p><?= $_SESSION['user']['email'] ?></p>
+                    <div class='profile-info-block'>
+                        <p class="profile-info"><b>Ім'я: </b><?= $_SESSION['user']['name'] ?></p>
+                        <p class="profile-info"><b>Пошта: </b><?= $_SESSION['user']['email'] ?></p>
                     </div>
-                                        <!-- <form action="#" method="post" class="change-form" data-netlify="true" id="form">
-                        <div class="change-field">
-                            <label class="change-name">Ім'я:</label>
-                            <input type="email" class="change-input" name="name">
-                        </div>
-                        <div class="change-field">
-                            <label class="change-name">Пошта:</label>
-                            <input type="email" class="change-input" name="email">
-                        </div>
-                        <button class="change-btn" type='submit'>ЗМІНИТИ ПОШТУ</button>
-                    </form> -->
                 </div>
                 <div class="service-card">
                     <h3>Змінити пошту</h3>
