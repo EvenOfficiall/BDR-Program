@@ -38,15 +38,19 @@
                 <h2>Вхід</h2>
                 <div class="login-block">
                     <form action="./assets/db/log-in.php" method="post" class="login-form" data-netlify="true" id="form">
+
                         <div class="login-form-field">
                             <label for="user-email" class="login-form-name">Пошта</label>
                             <input type="email" class="login-form-input" id="user-email" name="email">
                         </div>
+
                         <div class="login-form-field">
                             <label for="user-password" class="login-form-name">Пароль</label>
                             <input type="password" class="login-form-input" id="user-pass" name="password">
                         </div>
+
                         <button class="login-form-btn" id="launch-btn" type='submit'>УВІЙТИ</button>
+                        
                         <p>У вас немає акаунту? - <a class='question-link' href="./registration.php">Зареєструйтесь!</a></p>
 
                         <?php 
