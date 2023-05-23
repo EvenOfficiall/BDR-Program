@@ -32,14 +32,14 @@
                 <div class="service-card">
                     <h3>Вантажні перевезення</h3>
                     <p>Натисніть на кнопку "Додати вантаж", щоб додати новий вантаж.<br>Натисніть на кнопку "Пропозиції", щоб переглянути всі актуальні пропозиції.</p>
-                    <a href="#" class="cta-button">Додати вантаж</a>
-                    <a href="cargo-table.php" class="cta-button">Пропозиції</a>
+                    <a href="cargo-create.php" class="cta-button">ДОДАТИ ВАНТАЖ</a>
+                    <a href="cargo-table.php" class="cta-button">ПРОПОЗИЦІЇ</a>
                 </div>
                 <div class="service-card">
                     <h3>Пассажирські перевезення</h3>
                     <p>Натисніть на кнопку "Додати поїздку", щоб додати нову поїздку.<br>Натисніть на кнопку "Пропозиції", щоб переглянути всі актуальні пропозиції.</p>
-                    <a href="#" class="cta-button">Додати поїздку</a>
-                    <a href="companion-table.php" class="cta-button">Пропозиції</a>
+                    <a href="companion-create.php" class="cta-button">ДОДАТИ ПОЇЗДКУ</a>
+                    <a href="companion-table.php" class="cta-button">ПРОПОЗИЦІЇ</a>
                 </div>
             </div>
         </section>
