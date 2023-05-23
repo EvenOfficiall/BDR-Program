@@ -25,7 +25,7 @@
                 </div>
                 <ul class="nav-links">
                     <!-- <li><a href="./main-page.html">Головна</a></li> -->
-                    <li><a href="./profile.php">Профіль</a></li>
+                    <li><a href="./profile.php">Профіль(<?= $_SESSION['user']['name'] ?>)</a></li>
                     <li><a href="./assets/db/log-out.php">Вийти</a></li>
                 </ul>
             </nav>
@@ -70,7 +70,7 @@
                 <p>&copy; 2023 TransConnect. Всі права захищені.</p>
                 <ul class="footer-links">
                     <!-- <li><a href="#">Головна</a></li> -->
-                    <li><a href="./profile.php">Профіль</a></li>
+                    <li><a href="./profile.php">Профіль(<?= $_SESSION['user']['name'] ?>)</a></li>
                     <li><a href="./assets/db/log-out.php">Вийти</a></li>
                 </ul>
             </div>

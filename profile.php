@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    require_once './assets/db/connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +25,7 @@
                 </div>
                 <ul class="nav-links">
                     <!-- <li><a href="./main-page.html">Головна</a></li> -->
-                    <li><a href="./profile.php">Профіль</a></li>
+                    <li><a href="./profile.php">Профіль(<?= $_SESSION['user']['name'] ?>)</a></li>
                     <li><a href="./assets/db/log-out.php">Вийти</a></li>
                 </ul>
             </nav>
@@ -28,10 +33,24 @@
 
         <section class="services">
             <div class="container">
-                <h2>Привіт, ****</h2>
+                <h2>Привіт, <?= $_SESSION['user']['name'] ?></h2>
                 <div class="service-card">
                     <h3>Персональна інформація</h3>
-                    
+                    <div>
+                        <p><?= $_SESSION['user']['name'] ?></p>
+                        <p><?= $_SESSION['user']['email'] ?></p>
+                    </div>
+                                        <!-- <form action="#" method="post" class="change-form" data-netlify="true" id="form">
+                        <div class="change-field">
+                            <label class="change-name">Ім'я:</label>
+                            <input type="email" class="change-input" name="name">
+                        </div>
+                        <div class="change-field">
+                            <label class="change-name">Пошта:</label>
+                            <input type="email" class="change-input" name="email">
+                        </div>
+                        <button class="change-btn" type='submit'>ЗМІНИТИ ПОШТУ</button>
+                    </form> -->
                 </div>
                 <div class="service-card">
                     <h3>Змінити пошту</h3>
