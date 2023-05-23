@@ -1,8 +1,3 @@
-<?php 
-    session_start();
-    require_once './assets/db/connect.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransConnect</title>
     <link rel="shortcut icon" href="./assets/images/logo-page.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/cargo-table.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
     <script src="script.js"></script>
 </head>
@@ -31,37 +26,21 @@
             </nav>
         </header>
 
-        <section class="table-section">
+        <section class="services">
             <div class="container">
-            <h2>Актуальні пропозиції</h2>
-                <table class="table-card">
-                    <tr>
-                        <th>Дата</th>
-                        <th>Звідки</th>
-                        <th>Куди</th>
-                        <th>Інформація</th>
-                        <th>Ціна</th>
-                        <th>Контакти</th>
-                    </tr>
+                <h2>Привіт, ****</h2>
+                <div class="service-card">
+                    <h3>Персональна інформація</h3>
+                    
+                </div>
+                <div class="service-card">
+                    <h3>Змінити пошту</h3>
 
-                    <?php
-                        $cargo = mysqli_query($connect, "SELECT * FROM `cargo`");
-                        $cargo = mysqli_fetch_all($cargo);
-                        foreach ($cargo as $crg) {
-                            ?>
-                                <tr>
-                                    <td><?= $crg[1] ?></td>
-                                    <td><?= $crg[2] ?></td>
-                                    <td><?= $crg[3] ?></td>
-                                    <td><?= $crg[4] ?></td>
-                                    <td><?= $crg[5] ?> грн</td>
-                                    <td><?= $crg[6] ?></td>
-                                </tr>
-                            <?php
-                        }
-                    ?>
-
-                </table>
+                </div>
+                <div class="service-card">
+                    <h3>Змінити пароль</h3>
+                    
+                </div>
             </div>
         </section>
 
