@@ -43,7 +43,8 @@
                 </div>
                 <div class="service-card">
                     <h3>Змінити пошту</h3>
-                    <form action="#" method="post" class="change-form" data-netlify="true" id="form">
+                    <form action="./assets/db/change-email.php" method="post" class="change-form" data-netlify="true" id="form">
+                        <input type="hidden", name="id", value="<?= $_SESSION['user']['id'] ?>">
                         <div class="change-field">
                             <label class="change-name">Стара пошта</label>
                             <input type="email" class="change-input" name="old_email">
@@ -53,6 +54,12 @@
                             <input type="email" class="change-input" name="new_email">
                         </div>
                         <button class="change-btn" type='submit'>ЗМІНИТИ ПОШТУ</button>
+                        <?php 
+                            if ($_SESSION['message']) {
+                                echo '<p class="message"> ' . $_SESSION['message'] . ' </p>';
+                            }
+                            unset($_SESSION['message']);
+                        ?>
                     </form>
                 </div>
                 <div class="service-card">
@@ -67,6 +74,12 @@
                             <input type="email" class="change-input" name="new_password">
                         </div>
                         <button class="change-btn" type='submit'>ЗМІНИТИ ПАРОЛЬ</button>
+                        <?php 
+                            if ($_SESSION['message']) {
+                                echo '<p class="message"> ' . $_SESSION['message'] . ' </p>';
+                            }
+                            unset($_SESSION['message']);
+                        ?>
                     </form>
                 </div>
             </div>

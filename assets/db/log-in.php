@@ -28,10 +28,3 @@
     }
 
 ?>
-
-<pre>
-    <?php
-        print_r($check_user);
-        print_r($user);
-    ?>
-</pre>
