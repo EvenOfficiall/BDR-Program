@@ -64,14 +64,14 @@
                 </div>
                 <div class="service-card">
                     <h3>Змінити пароль</h3>
-                    <form action="#" method="post" class="change-form" data-netlify="true" id="form">
+                    <form action="./assets/db/change-password.php" method="post" class="change-form" data-netlify="true" id="form">
                         <div class="change-field">
                             <label class="change-name">Старий пароль</label>
-                            <input type="email" class="change-input" name="old_password">
+                            <input type="password" class="change-input" name="old_password">
                         </div>
                         <div class="change-field">
                             <label class="change-name">Новий пароль</label>
-                            <input type="email" class="change-input" name="new_password">
+                            <input type="password" class="change-input" name="new_password">
                         </div>
                         <button class="change-btn" type='submit'>ЗМІНИТИ ПАРОЛЬ</button>
                         <?php 

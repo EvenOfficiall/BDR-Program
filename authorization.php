@@ -26,8 +26,8 @@
                     <a href="./main-page.html">TransConnect</a>
                 </div>
                 <ul class="nav-links">
-                    <!-- <li><a href="./main-page.html">Головна</a></li>
-                    <li><a href="#">Про нас</a></li> -->
+                    <!-- <li><a href="./main-page.html">Головна</a></li>-->
+                    <li><a href="#">Про нас</a></li>
                     <li><a href="./authorization.php">Увійти</a></li>
                 </ul>
             </nav>
@@ -69,8 +69,8 @@
             <div class="container">
                 <p>&copy; 2023 TransConnect. Всі права захищені.</p>
                 <ul class="footer-links">
-                    <!-- <li><a href="./main-page.html">Головна</a></li>
-                    <li><a href="#">Про нас</a></li> -->
+                    <!-- <li><a href="./main-page.html">Головна</a></li>-->
+                    <li><a href="#">Про нас</a></li>
                     <li><a href="./authorization.php">Увійти</a></li>
                 </ul>
             </div>
