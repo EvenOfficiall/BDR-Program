@@ -54,16 +54,17 @@
                         </div>
                         <button class="change-btn" type='submit'>ЗМІНИТИ ПОШТУ</button>
                         <?php 
-                            if ($_SESSION['message']) {
-                                echo '<p class="message"> ' . $_SESSION['message'] . ' </p>';
+                            if ($_SESSION['message-email']) {
+                                echo '<p class="message"> ' . $_SESSION['message-email'] . ' </p>';
                             }
-                            unset($_SESSION['message']);
+                            unset($_SESSION['message-email']);
                         ?>
                     </form>
                 </div>
                 <div class="service-card">
                     <h3>Змінити пароль</h3>
                     <form action="./assets/db/change-password.php" method="post" class="change-form" data-netlify="true" id="form">
+                        <input type="hidden", name="id", value="<?= $_SESSION['user']['id'] ?>">.
                         <div class="change-field">
                             <label class="change-name">Старий пароль</label>
                             <input type="password" class="change-input" name="old_password">
@@ -74,10 +75,10 @@
                         </div>
                         <button class="change-btn" type='submit'>ЗМІНИТИ ПАРОЛЬ</button>
                         <?php 
-                            if ($_SESSION['message']) {
-                                echo '<p class="message"> ' . $_SESSION['message'] . ' </p>';
+                            if ($_SESSION['message-pass']) {
+                                echo '<p class="message"> ' . $_SESSION['message-pass'] . ' </p>';
                             }
-                            unset($_SESSION['message']);
+                            unset($_SESSION['message-pass']);
                         ?>
                     </form>
                 </div>
