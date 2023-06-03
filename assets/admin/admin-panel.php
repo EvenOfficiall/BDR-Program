@@ -1,6 +1,8 @@
 <?php 
     session_start();
     require_once '../db/connect.php';
+
+    $pr
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +59,7 @@
                                     <td><?= $crg[4] ?></td>
                                     <td><?= $crg[5] ?> грн</td>
                                     <td><?= $crg[6] ?></td>
-                                    <td><a href="#" class='update-btn'>Редагувати</a></td>
+                                    <td><a href="./update-cargo.php?id=<?= $crg[0] ?>" class='update-btn'>Редагувати</a></td>
                                     <td><a href="#" class='delete-btn'>Видалити</a></td>
                                 </tr>
                             <?php
@@ -89,7 +91,7 @@
                                     <td><?= $cmp[4] ?></td>
                                     <td><?= $cmp[5] ?> грн</td>
                                     <td><?= $cmp[6] ?></td>
-                                    <td><a href="#" class='update-btn'>Редагувати</a></td>
+                                    <td><a href="./update-companion.php?id=<?= $cmp[0] ?>" class='update-btn'>Редагувати</a></td>
                                     <td><a href="#" class='delete-btn'>Видалити</a></td>
                                 </tr>
                             <?php
