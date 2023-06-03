@@ -10,14 +10,13 @@
     $user = mysqli_fetch_assoc($check_user);
 
     $check_admin = mysqli_query($connect, "SELECT * FROM `users` WHERE `email` = '$email' AND `password` = '$password' AND `id_roles` = 2");
-    $admin = mysqli_fetch_assoc($check_admin);
    
     if(mysqli_num_rows($check_user) > 0) {
        
         $_SESSION['user'] = [
             "id" => $user['id'],
             "name" => $user['name'],
-            "email" => $user['email']
+            "email" => $user['email'],
         ];
 
         if(mysqli_num_rows($check_admin) > 0) {
