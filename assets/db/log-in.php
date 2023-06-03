@@ -22,7 +22,7 @@
 
     } else {
 
-        $_SESSION['message'] = 'Не правильний логін або пароль';
+        $_SESSION['message'] = 'Неправильний логін або пароль';
         header('Location: ../../authorization.php');
         
     }

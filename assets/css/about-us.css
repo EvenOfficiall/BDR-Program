@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar styles */
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+  
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+  
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+/* Hero styles */
+
+.hero {
+    background-image: url(../images/hero-background.png);
+    background-color: #333, 0.1;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+  
+.hero h1 {
+    font-size: 48px;
+}
+  
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+  
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+  
+  /* "Services" styles */
+
+.services {
+    padding: 15px 0px 40px;
+    background-color: #f4f4f4;
+}
+  
+.services h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+  
+.service-card {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+  
+.service-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+  
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.service-card p {
+    font-size: 16px;
+}
+  
+  /* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+  
+.footer-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+  
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
