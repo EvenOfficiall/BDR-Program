@@ -67,6 +67,7 @@
 
                         <div class="creation-form-field">
                             <label class="creation-form-name">Інформація</label>
+                            <p5>тип автомобіля/причіпа, назва вантажу, вага вантажу</p5>
                             <input type="textarea" class="creation-form-input" name="info" value="<?= $cargo['info'] ?>">
                         </div>
 
@@ -77,6 +78,7 @@
 
                         <div class="creation-form-field">
                             <label class="creation-form-name">Контакти</label>
+                            <p5>ім'я, пошта, телефон (по бажанню)</p5>
                             <input type="textarea" class="creation-form-input" name="contacts" value="<?= $cargo['contacts'] ?>">
                         </div>
 

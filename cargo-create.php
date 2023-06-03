@@ -54,6 +54,7 @@
 
                         <div class="creation-form-field">
                             <label class="creation-form-name">Інформація</label>
+                            <p5>тип автомобіля/причіпа, назва вантажу, вага вантажу</p5>
                             <input type="textarea" class="creation-form-input" name="info">
                         </div>
 
@@ -64,6 +65,7 @@
 
                         <div class="creation-form-field">
                             <label class="creation-form-name">Контакти</label>
+                            <p5>ім'я, пошта, телефон (по бажанню)</p5>
                             <input type="textarea" class="creation-form-input" name="contacts">
                         </div>
 

@@ -62,6 +62,7 @@
 
                         <div class="creation-form-field">
                             <label class="creation-form-name">Інформація</label>
+                            <p5>тип автомобіля, кількість місць, літраж багажника</p5>
                             <input type="textarea" class="creation-form-input" name="info" value="<?= $companion['info'] ?>">
                         </div>
 
@@ -72,6 +73,7 @@
 
                         <div class="creation-form-field">
                             <label class="creation-form-name">Контакти</label>
+                            <p5>ім'я, пошта, телефон (по бажанню)</p5>
                             <input type="textarea" class="creation-form-input" name="contacts" value="<?= $companion['contacts'] ?>">
                         </div>
 
