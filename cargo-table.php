@@ -45,7 +45,7 @@
                     </tr>
 
                     <?php
-                        $cargo = mysqli_query($connect, "SELECT * FROM `cargo`");
+                        $cargo = mysqli_query($connect, "SELECT * FROM `cargo` ORDER BY `cargo`.`id` DESC");
                         $cargo = mysqli_fetch_all($cargo);
                         foreach ($cargo as $crg) {
                             ?>

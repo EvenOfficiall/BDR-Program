@@ -45,7 +45,7 @@
                     </tr>
 
                     <?php
-                        $companion = mysqli_query($connect, "SELECT * FROM `companion`");
+                        $companion = mysqli_query($connect, "SELECT * FROM `companion` ORDER BY `companion`.`id` DESC");
                         $companion = mysqli_fetch_all($companion);
                         foreach ($companion as $cmp) {
                             ?>

@@ -9,7 +9,7 @@
     $check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `email` = '$email' AND `password` = '$password'");
 
     if(mysqli_num_rows($check_user) > 0 ) {
-
+       
         $user = mysqli_fetch_assoc($check_user);
 
         $_SESSION['user'] = [
@@ -18,8 +18,13 @@
             "email" => $user['email']
         ];
 
-        header('Location: ../../menu.php');
+        if(mysqli_query($connect, "SELECT * FROM `users` WHERE id_roles = 2") > 0) {
+            header('Location: ../admin/admin-panel.php');
+        } else {
 
+            header('Location: ../../menu.php');
+        }
+    
     } else {
 
         $_SESSION['message'] = 'Неправильний логін або пароль';

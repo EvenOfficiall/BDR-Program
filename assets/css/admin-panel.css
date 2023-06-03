@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Navbar styles */
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+  
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+  
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+   
+/* "Tables" styles */
+
+.table-section {
+    padding: 15px 0px 40px;
+    background-color: #f4f4f4;
+}
+  
+.table-section {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+  
+.table-card {
+    background-color: #fff;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-card th {
+    font-weight: 500;
+    font-size: 16px; 
+    color:#ffffff;
+    background-color:#333;
+}
+
+.table-card td {
+    font-size: 14px;
+    color:#354251;
+}
+
+td, a {
+    text-decoration: none;
+}
+
+.update-btn {
+    color: green;
+}
+
+.delete-btn {
+    color: rgb(255, 33, 33);
+}
+
+.table-card td, .table-card th { 
+    white-space:pre-wrap;
+    padding: 10px 5px;
+    line-height: 13px;
+    vertical-align: middle;
+    border: 1px solid #333;
+}	
+
+.table-card tr:hover {
+    background-color:#f9fafb
+}
+
+.table-card tr:hover td { 
+    color:#354251;
+    cursor:default;
+}
+  
+
+/* .menu-btn {
+    background: #333;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 0;
+    margin: 24px 10px 15px;
+} */
+
+/* .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+} */
+
+  /* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+  
+.footer-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+  
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
